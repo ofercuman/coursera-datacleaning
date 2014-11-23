@@ -131,3 +131,4 @@ dftidy2$measurement <- namerows
 dftidy <- merge(dftidy1, dftidy2, by.x = "measurement", by.y = "measurement")
 ## creates dftidy data frame by merging dftidy1 and dftidy2 on measurement
 
+write.table(dftidy,file = "./Data/tidy.txt",row.names = F)
